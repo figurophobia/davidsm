@@ -37,3 +37,16 @@ body {
   // padding-top: calc(var(--index) * 2.5rem);
   top: calc(var(--index) * 4rem);
 }
+
+/* typing caret */
+.type-caret {
+  display: inline-block;
+  width: 10px;
+  background-color: #16f2b3;
+  animation: blink-caret 1s steps(1) infinite;
+  margin-left: 4px;
+}
+
+@keyframes blink-caret {
+  50% { opacity: 0; }
+}

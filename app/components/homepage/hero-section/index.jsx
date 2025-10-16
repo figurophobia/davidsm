@@ -1,5 +1,6 @@
-// @flow strict
+"use client"
 
+import { useEffect, useState } from 'react';
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,6 +11,30 @@ import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 
 function HeroSection() {
+  const fullText = `Hello, This is ${personalData.name.toUpperCase()} , I'm a Professional ${personalData.designation}.`;
+  const [displayText, setDisplayText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    let timeout;
+
+    if (!isDeleting && displayText === fullText) {
+      // pause before start deleting
+      timeout = setTimeout(() => setIsDeleting(true), 1500);
+    } else if (isDeleting && displayText === '') {
+      // pause before start typing again
+      timeout = setTimeout(() => setIsDeleting(false), 500);
+    } else {
+      const speed = isDeleting ? 40 : 100;
+      timeout = setTimeout(() => {
+        const nextLen = isDeleting ? displayText.length - 1 : displayText.length + 1;
+        setDisplayText(fullText.substring(0, Math.max(0, nextLen)));
+      }, speed);
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, fullText]);
+
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
       <Image
@@ -23,12 +48,11 @@ function HeroSection() {
       <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
         <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
           <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
-            Hello, <br />
-            This is {' '}
-            <span className=" text-pink-500">{personalData.name}</span>
-            {` , I'm a Professional `}
-            <span className=" text-[#16f2b3]">{personalData.designation}</span>
-            .
+            <span className="block">
+              <span className="mr-2 text-pink-500">&gt;</span>
+              <span className="inline-block font-mono">{displayText}</span>
+              <span className="inline-block ml-1 align-middle type-caret" aria-hidden="true">&nbsp;</span>
+            </span>
           </h1>
 
           <div className="my-12 flex items-center gap-5">

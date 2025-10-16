@@ -1,8 +1,22 @@
 "use client"
 
-import Lottie from "lottie-react";
+import { useEffect, useState } from 'react';
 
 const AnimationLottie = ({ animationPath, width }) => {
+  const [LottieComp, setLottieComp] = useState(null);
+
+  useEffect(() => {
+    let mounted = true;
+    import('lottie-react').then((mod) => {
+      if (mounted) setLottieComp(() => mod.default || mod);
+    }).catch(() => {
+      // ignore load errors on server/build
+    });
+    return () => { mounted = false };
+  }, []);
+
+  if (!LottieComp) return null;
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -13,7 +27,7 @@ const AnimationLottie = ({ animationPath, width }) => {
   };
 
   return (
-    <Lottie {...defaultOptions} />
+    <LottieComp {...defaultOptions} />
   );
 };
 
