@@ -26,6 +26,7 @@ import gcp from '../app/assets/svg/skills/gcp.svg';
 import gimp from '../app/assets/svg/skills/gimp.svg';
 import git from '../app/assets/svg/skills/git.svg';
 import go from '../app/assets/svg/skills/go.svg';
+import godot from '../app/assets/svg/skills/godot.svg';
 import graphql from '../app/assets/svg/skills/graphql.svg';
 import haxe from '../app/assets/svg/skills/haxe.svg';
 import html from '../app/assets/svg/skills/html.svg';
@@ -48,6 +49,7 @@ import nginx from '../app/assets/svg/skills/nginx.svg';
 import numpy from '../app/assets/svg/skills/numpy.svg';
 import nuxtJS from '../app/assets/svg/skills/nuxtJS.svg';
 import opencv from '../app/assets/svg/skills/opencv.svg';
+import opengl from '../app/assets/svg/skills/opengl.svg';
 import photoshop from '../app/assets/svg/skills/photoshop.svg';
 import php from '../app/assets/svg/skills/php.svg';
 import picsart from '../app/assets/svg/skills/picsart.svg';
@@ -58,6 +60,7 @@ import python from '../app/assets/svg/skills/python.svg';
 import pytorch from '../app/assets/svg/skills/pytorch.svg';
 import react from '../app/assets/svg/skills/react.svg';
 import ruby from '../app/assets/svg/skills/ruby.svg';
+import sagemath from '../app/assets/svg/skills/sagemath.svg';
 import selenium from '../app/assets/svg/skills/selenium.svg';
 import sketch from '../app/assets/svg/skills/sketch.svg';
 import strapi from '../app/assets/svg/skills/strapi.svg';
@@ -67,6 +70,7 @@ import tailwind from '../app/assets/svg/skills/tailwind.svg';
 import tensorflow from '../app/assets/svg/skills/tensorflow.svg';
 import typescript from '../app/assets/svg/skills/typescript.svg';
 import unity from '../app/assets/svg/skills/unity.svg';
+import vegas from '../app/assets/svg/skills/vegas.svg';
 import vitejs from '../app/assets/svg/skills/vitejs.svg';
 import vue from '../app/assets/svg/skills/vue.svg';
 import vuetifyjs from '../app/assets/svg/skills/vuetifyjs.svg';
@@ -182,6 +186,8 @@ export const skillsImage = (skill) => {
       return firebase;
     case 'gimp':
       return gimp;
+    case 'godot':
+      return godot;
     case 'git':
       return git;
     case 'graphql':
@@ -196,6 +202,8 @@ export const skillsImage = (skill) => {
       return numpy;
     case 'opencv':
       return opencv;
+    case 'opengl':
+      return opengl;
     case 'premiere pro':
       return premierepro;
     case 'pytorch':
@@ -254,6 +262,10 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'vegas':
+      return vegas;
+    case 'sagemath':
+      return sagemath;
     default:
       break;
   }

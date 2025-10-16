@@ -25,7 +25,7 @@ function HeroSection() {
       // pause before start typing again
       timeout = setTimeout(() => setIsDeleting(false), 500);
     } else {
-      const speed = isDeleting ? 40 : 100;
+      const speed = isDeleting ? 40 : 70;
       timeout = setTimeout(() => {
         const nextLen = isDeleting ? displayText.length - 1 : displayText.length + 1;
         setDisplayText(fullText.substring(0, Math.max(0, nextLen)));
@@ -132,29 +132,37 @@ function HeroSection() {
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Abu Said</span>
+                <span className="text-amber-300">David Sánchez Míguez</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div className="ml-4 lg:ml-8 mr-2">
                 <span className=" text-white">skills:</span>
                 <span className="text-gray-400">{`['`}</span>
-                <span className="text-amber-300">React</span>
+                <span className="text-amber-300">C/C++</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NextJS</span>
+                <span className="text-amber-300">Java</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Redux</span>
+                <span className="text-amber-300">Python</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
+                <span className="text-amber-300">Selenium</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NestJS</span>
+                <span className="text-amber-300">Postgresql</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySql</span>
+                <span className="text-amber-300">Jswing</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
+                <span className="text-amber-300">Arch</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Linux</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Docker</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">AWS</span>
+                <span className="text-amber-300">Git</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">OpenGL</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Godot</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Markdown</span>
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>

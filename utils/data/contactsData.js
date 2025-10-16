@@ -1,11 +1,11 @@
 export const contactsData = {
-    email: 'abusaid7388@gmail.com',
-    phone: '+8801608797655',
-    address: 'Middle Badda, Dhaka, Bangladesh - 1212 ',
-    github: 'https://github.com/said7388',
-    facebook: 'https://www.facebook.com/abusaid.riyaz/',
-    linkedIn: 'https://www.linkedin.com/in/abu-said-bd/',
-    twitter: 'https://twitter.com/said7388',
+    email: 'dasamiarea@gmail.com',
+    phone: '+34 642506943',
+    address: 'Robotnicza 16, 80-864 Gdańsk, Poland',
+    github: 'https://github.com/figurophobia',
+    facebook: 'https://www.facebook.com/your-profile',
+    linkedIn: 'linkedin.com/in/david-sánchez-míguez-01167538a',
+    twitter: 'https://twitter.com/your-username',
     stackOverflow: 'https://stackoverflow.com/users/16840768/abu-said',
-    devUsername: "said7388"
+    devUsername: "DaviDavirn",
 }

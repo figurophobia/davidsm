@@ -1,17 +1,21 @@
 export const personalData = {
-  name: "ABU SAID",
-  profile: '/profile.png',
-  designation: "Software Developer",
-  description: "My name is ABU SAID. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
-  email: 'abusaid7388@gmail.com',
-  phone: '+8801608797655',
-  address: 'Middle Badda, Dhaka, Bangladesh - 1212 ',
-  github: 'https://github.com/said7388',
-  facebook: 'https://www.facebook.com/abusaid.riyaz/',
-  linkedIn: 'https://www.linkedin.com/in/abu-said-bd/',
-  twitter: 'https://twitter.com/said7388',
-  stackOverflow: 'https://stackoverflow.com/users/16840768/abu-said',
-  leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
+  name: "David Sánchez Míguez",
+  profile: '/SelfStockholm.jpeg',
+  designation: "Computer Engineering Student",
+  description: `I'm David Sánchez Míguez from Galicia, Spain — a passionate Computer Engineering student and Linux enthusiast.
+I'm a quick and self-motivated learner, always exploring new technologies and understanding how systems work from the inside out.
+Currently, I’m living in Gdansk, Poland for my Erasmus+ program at Politechnika Gdańska (WETI), studying Data Engineering and improving my English (B2 level).
+I’m open to any job opportunities that match my skills and interests, and I’m eager to keep learning and growing through real-world projects.`,
+  
+  email: 'dasamiarea@gmail.com',
+  phone: '+34 642506943',
+  address: 'Robotnicza 16, 80-864 Gdańsk, Poland',
+  github: 'https://github.com/figurophobia',
+  facebook: 'https://www.facebook.com/your-profile',
+  linkedIn: 'linkedin.com/in/david-sánchez-míguez-01167538a',
+  twitter: 'https://twitter.com/your-username',
+  stackOverflow: 'https://stackoverflow.com/users/your-id/your-name',
+  leetcode: "https://leetcode.com/your-username/",
+  devUsername: "DaviDavirn",
+  resume: "https://drive.google.com/file/d/your-resume-link/view?usp=sharing"
 }

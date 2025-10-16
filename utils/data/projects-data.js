@@ -1,52 +1,44 @@
 export const projectsData = [
-    {
-        id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
-        code: '',
-        role: 'Full Stack Developer',
-        demo: '',
-    },
-    {
-        id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-        code: '',
-        demo: '',
-        role: 'Full Stack Developer',
-    }
+  {
+    id: 1,
+    name: 'Remote Server Automation Tool',
+    description: `I developed a Linux-based automation tool that simplifies remote server management.
+It allows deploying, updating, and monitoring multiple servers via SSH using customizable Bash scripts.
+This project helped me deepen my understanding of process management, system services, and secure automation.`,
+    tools: ['Bash', 'Python', 'SSH', 'Cron', 'Linux'],
+    role: 'System Automation Developer',
+    code: 'https://github.com/your-username/server-automation-tool',
+    demo: '',
+  },
+  {
+    id: 2,
+    name: 'Networked Ping-Pong Game in C',
+    description: `As part of my university coursework, I built a multiplayer Ping-Pong game using processes and signals in C.
+Each player runs as a separate process communicating through files and synchronized with UNIX signals.
+This project strengthened my skills in IPC (interprocess communication) and system-level programming.`,
+    tools: ['C', 'UNIX Signals', 'File I/O', 'Processes', 'Makefile'],
+    role: 'Systems Programmer',
+    code: 'https://github.com/your-username/pingpong-ipc',
+    demo: '',
+  },
+  {
+    id: 3,
+    name: 'Task Scheduler for Linux',
+    description: `I created a lightweight task scheduler for Linux systems to automate repetitive maintenance and monitoring tasks.
+It supports logging, priority execution, and dynamic scheduling, helping optimize system resource usage.`,
+    tools: ['Python', 'Bash', 'Systemd', 'Linux', 'Git'],
+    role: 'Backend & Automation Developer',
+    code: 'https://github.com/your-username/linux-task-scheduler',
+    demo: '',
+  },
+  {
+    id: 4,
+    name: 'Personal Portfolio Website',
+    description: `I built my personal portfolio from scratch to showcase my projects and technical skills.
+It’s a fully responsive web application deployed on a remote server, integrating modern frontend technologies and automated deployment scripts.`,
+    tools: ['React', 'TailwindCSS', 'JavaScript', 'Vercel', 'GitHub Actions'],
+    code: 'https://github.com/your-username/portfolio',
+    demo: 'https://your-portfolio-link.vercel.app/',
+    role: 'Full Stack Developer',
+  }
 ];
-
-
-// Do not remove any property.
-// Leave it blank instead as shown below
-
-// {
-//     id: 1,
-//     name: '',
-//     description: "",
-//     tools: [],
-//     role: '',
-//     code: '',
-//     demo: '',
-// },
