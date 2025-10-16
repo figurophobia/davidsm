@@ -7,6 +7,8 @@ It allows deploying, updating, and monitoring multiple servers via SSH using cus
 This project helped me deepen my understanding of process management, system services, and secure automation.`,
     tools: ['Bash', 'Python', 'SSH', 'Cron', 'Linux'],
     role: 'System Automation Developer',
+    active: true,
+    status: 'maintained',
     code: 'https://github.com/your-username/server-automation-tool',
     demo: '',
   },
@@ -19,6 +21,8 @@ This project strengthened my skills in IPC (interprocess communication) and syst
     tools: ['C', 'UNIX Signals', 'File I/O', 'Processes', 'Makefile'],
     role: 'Systems Programmer',
     code: 'https://github.com/your-username/pingpong-ipc',
+    active: false,
+    status: 'archived',
     demo: '',
   },
   {
@@ -29,6 +33,8 @@ It supports logging, priority execution, and dynamic scheduling, helping optimiz
     tools: ['Python', 'Bash', 'Systemd', 'Linux', 'Git'],
     role: 'Backend & Automation Developer',
     code: 'https://github.com/your-username/linux-task-scheduler',
+    active: true,
+    status: 'in progress',
     demo: '',
   },
   {
@@ -39,6 +45,8 @@ It’s a fully responsive web application deployed on a remote server, integrati
     tools: ['React', 'TailwindCSS', 'JavaScript', 'Vercel', 'GitHub Actions'],
     code: 'https://github.com/your-username/portfolio',
     demo: 'https://your-portfolio-link.vercel.app/',
+    active: true,
+    status: 'deployed',
     role: 'Full Stack Developer',
   }
 ];

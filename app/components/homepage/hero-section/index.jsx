@@ -124,90 +124,55 @@ function HeroSection() {
           <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
             <code className="font-mono text-xs md:text-sm lg:text-base">
               <div className="blink">
-                <span className="mr-2 text-pink-500">const</span>
-                <span className="mr-2 text-white">coder</span>
-                <span className="mr-2 text-pink-500">=</span>
-                <span className="text-gray-400">{'{'}</span>
+                <span className="mr-2 text-pink-500">class</span>
+                <span className="mr-2 text-white">Coder:</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
-                <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">David Sánchez Míguez</span>
-                <span className="text-gray-400">{`',`}</span>
-              </div>
-              <div className="ml-4 lg:ml-8 mr-2">
-                <span className=" text-white">skills:</span>
-                <span className="text-gray-400">{`['`}</span>
-                <span className="text-amber-300">C/C++</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Java</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Python</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Selenium</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Postgresql</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Jswing</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Arch</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Linux</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Docker</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Git</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">OpenGL</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Godot</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Markdown</span>
-                <span className="text-gray-400">{"'],"}</span>
+                <span className="ml-4 lg:ml-8 text-white">def __init__(self):</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">hardWorker:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
+                <span className="ml-8 lg:ml-16 text-white">self.name = </span>
+                <span className="text-amber-300">'David Sánchez Míguez'</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">quickLearner:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
+                <span className="ml-8 lg:ml-16 text-white">self.skills = </span>
+                <span className="text-amber-300">['C/C++', 'Java', 'Python', 'Selenium', 'Postgresql', 'Jswing', 'Arch', 'Linux', 'Docker', 'Git', 'OpenGL', 'Godot', 'Markdown']</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">problemSolver:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
+                <span className="ml-8 lg:ml-16 text-white">self.hard_worker = </span>
+                <span className="text-orange-400">True</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-green-400">hireable:</span>
-                <span className="text-orange-400">function</span>
-                <span className="text-gray-400">{'() {'}</span>
+                <span className="ml-8 lg:ml-16 text-white">self.quick_learner = </span>
+                <span className="text-orange-400">True</span>
               </div>
               <div>
-                <span className="ml-8 lg:ml-16 mr-2 text-orange-400">return</span>
-                <span className="text-gray-400">{`(`}</span>
+                <span className="ml-8 lg:ml-16 text-white">self.problem_solver = </span>
+                <span className="text-orange-400">True</span>
               </div>
               <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">hardWorker</span>
-                <span className="text-amber-300">&amp;&amp;</span>
+                <span className="ml-4 lg:ml-8 text-pink-500">def</span>
+                <span className="ml-2 text-white">hireable(self):</span>
               </div>
               <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">problemSolver</span>
-                <span className="text-amber-300">&amp;&amp;</span>
+                <span className="ml-8 lg:ml-16 text-orange-400">return</span>
               </div>
               <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">skills.length</span>
-                <span className="mr-2 text-amber-300">&gt;=</span>
-                <span className="text-orange-400">5</span>
+                <span className="ml-12 lg:ml-24 text-cyan-400">self.</span>
+                <span className="mr-2 text-white">hard_worker</span>
+                <span className="text-amber-300">and</span>
               </div>
-              <div><span className="ml-8 lg:ml-16 mr-2 text-gray-400">{`);`}</span></div>
-              <div><span className="ml-4 lg:ml-8 text-gray-400">{`};`}</span></div>
-              <div><span className="text-gray-400">{`};`}</span></div>
+              <div>
+                <span className="ml-12 lg:ml-24 text-cyan-400">self.</span>
+                <span className="mr-2 text-white">problem_solver</span>
+                <span className="text-amber-300">and</span>
+              </div>
+              <div>
+                <span className="ml-12 lg:ml-24 text-cyan-400">len(self.</span>
+                <span className="text-white">skills)</span>
+                <span className="ml-2 text-amber-300">&gt;=</span>
+                <span className="ml-2 text-orange-400">5</span>
+              </div>
             </code>
           </div>
         </div>
