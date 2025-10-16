@@ -132,11 +132,11 @@ function HeroSection() {
               </div>
               <div>
                 <span className="ml-8 lg:ml-16 text-white">self.name = </span>
-                <span className="text-amber-300">'David Sánchez Míguez'</span>
+                <span className="text-amber-300">&#39;David Sánchez Míguez&#39;</span>
               </div>
               <div>
                 <span className="ml-8 lg:ml-16 text-white">self.skills = </span>
-                <span className="text-amber-300">['C/C++', 'Java', 'Python', 'Selenium', 'Postgresql', 'Jswing', 'Arch', 'Linux', 'Docker', 'Git', 'OpenGL', 'Godot', 'Markdown']</span>
+                <span className="text-amber-300">[&#39;C/C++&#39;, &#39;Java&#39;, &#39;Python&#39;, &#39;Selenium&#39;, &#39;Postgresql&#39;, &#39;Jswing&#39;, &#39;Arch&#39;, &#39;Linux&#39;, &#39;Docker&#39;, &#39;Git&#39;, &#39;OpenGL&#39;, &#39;Godot&#39;, &#39;Markdown&#39;]</span>
               </div>
               <div>
                 <span className="ml-8 lg:ml-16 text-white">self.hard_worker = </span>

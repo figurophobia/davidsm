@@ -33,7 +33,7 @@ function ProjectCard({ project }) {
           </div>
           <div>
             <span className="ml-4 lg:ml-8 text-white">name = </span>
-            <span className="text-amber-300">'{project.name}'</span>
+            <span className="text-amber-300">&#39;{project.name}&#39;</span>
           </div>
 
           <div className="ml-4 lg:ml-8 mr-2">
@@ -42,7 +42,7 @@ function ProjectCard({ project }) {
             {
               project.tools.map((tag, i) => (
                 <React.Fragment key={i}>
-                  <span className="text-amber-300">'{tag}'</span>
+                  <span className="text-amber-300">&#39;{tag}&#39;</span>
                   {
                     project.tools?.length - 1 !== i &&
                     <span className="text-gray-400">{`, `}</span>
@@ -51,15 +51,11 @@ function ProjectCard({ project }) {
               ))
             }
             <span className="text-amber-300">]</span>
-          </div>
-          <div>
-            <span className="ml-4 lg:ml-8 text-white">my_role = </span>
-            <span className="text-orange-400">{project.role}</span>
-          </div>
-          <div className="ml-4 lg:ml-8 mr-2">
-            <span className="text-white">description = </span>
-            <span className="text-cyan-400">'{project.description}'</span>
-          </div>
+            <div className="ml-4 lg:ml-8 mr-2">
+              <span className="text-white">description = </span>
+              <span className="text-cyan-400">&#39;{project.description}&#39;</span>
+            </div>
+            </div>
         </code>
       </div>
       </div>
