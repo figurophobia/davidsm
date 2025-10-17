@@ -1,6 +1,20 @@
 export const projectsData = [
   {
     id: 1,
+    name: 'Mystery at Marenport (Godot Visual Novel)',
+    description: `First project: a visual novel with point-and-click elements built in Godot.
+The game focuses on narrative choices, inventory interactions, and environment puzzles.
+I implemented scene management, dialogue systems, and a lightweight point-and-click mechanic using Godot's GDScript.`,
+    tools: ['Godot', 'GDScript', 'Tiled (maps)', 'Aseprite'],
+    role: 'Game Developer',
+    active: true,
+    status: 'in development',
+    code: 'https://github.com/your-username/mystery-marenport',
+    demo: '',
+    images: ['/image/GameScreenshots/Chair.jpeg', '/image/GameScreenshots/Silla.jpeg', '/image/GameScreenshots/TV.jpeg', '/image/GameScreenshots/Bottle.jpeg', '/image/GameScreenshots/Bottle2.jpeg'],
+  },
+  {
+    id: 2,
     name: 'Remote Server Automation Tool',
     description: `I developed a Linux-based automation tool that simplifies remote server management.
 It allows deploying, updating, and monitoring multiple servers via SSH using customizable Bash scripts.
@@ -11,9 +25,10 @@ This project helped me deepen my understanding of process management, system ser
     status: 'maintained',
     code: 'https://github.com/your-username/server-automation-tool',
     demo: '',
+    images: ['/image/IMS.png', '/image/PG.svg'],
   },
   {
-    id: 2,
+    id: 3,
     name: 'Networked Ping-Pong Game in C',
     description: `As part of my university coursework, I built a multiplayer Ping-Pong game using processes and signals in C.
 Each player runs as a separate process communicating through files and synchronized with UNIX signals.
@@ -24,18 +39,7 @@ This project strengthened my skills in IPC (interprocess communication) and syst
     active: false,
     status: 'archived',
     demo: '',
-  },
-  {
-    id: 3,
-    name: 'Task Scheduler for Linux',
-    description: `I created a lightweight task scheduler for Linux systems to automate repetitive maintenance and monitoring tasks.
-It supports logging, priority execution, and dynamic scheduling, helping optimize system resource usage.`,
-    tools: ['Python', 'Bash', 'Systemd', 'Linux', 'Git'],
-    role: 'Backend & Automation Developer',
-    code: 'https://github.com/your-username/linux-task-scheduler',
-    active: true,
-    status: 'in progress',
-    demo: '',
+    images: ['/image/pingpong-1.png'],
   },
   {
     id: 4,
@@ -45,6 +49,7 @@ It’s a fully responsive web application deployed on a remote server, integrati
     tools: ['React', 'TailwindCSS', 'JavaScript', 'Vercel', 'GitHub Actions'],
     code: 'https://github.com/your-username/portfolio',
     demo: 'https://your-portfolio-link.vercel.app/',
+    images: ['/image/portfolio-1.png'],
     active: true,
     status: 'deployed',
     role: 'Full Stack Developer',

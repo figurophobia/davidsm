@@ -1,9 +1,12 @@
 import { projectsData } from '@/utils/data/projects-data';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaCode, FaPlay, FaArrowLeft } from 'react-icons/fa';
+import Gallery from '../gallery';
 
-export default function ProjectPage({ params }) {
-  const id = parseInt(params.id, 10);
+export default async function ProjectPage({ params }) {
+  const awaitedParams = await params;
+  const id = parseInt(awaitedParams.id, 10);
   const project = projectsData.find(p => p.id === id);
 
   if (!project) {
@@ -25,6 +28,13 @@ export default function ProjectPage({ params }) {
         <p className="text-sm text-violet-300 mb-4">Status: <span className={`ml-2 ${project.active ? 'text-green-400' : 'text-yellow-400'}`}>{project.status}</span></p>
         <p className="text-white mb-6">{project.description}</p>
 
+        {/* Image gallery */}
+        {project.images && project.images.length > 0 ? (
+          <Gallery images={project.images} />
+        ) : (
+          <div className="mb-6 bg-[#0b0d1a] p-4 rounded text-sm text-gray-400">No images available for this project.</div>
+        )}
+
         <div className="mb-6">
           <h3 className="text-white mb-2">Tools</h3>
           <div className="flex flex-wrap gap-2">
@@ -42,3 +52,5 @@ export default function ProjectPage({ params }) {
     </main>
   )
 }
+
+
