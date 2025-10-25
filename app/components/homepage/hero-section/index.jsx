@@ -47,12 +47,18 @@ function HeroSection() {
 
       <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
         <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
-          <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
-            <span className="block">
-              <span className="mr-2 text-pink-500">&gt;</span>
-              <span className="inline-block font-mono">{displayText}</span>
-              <span className="inline-block ml-1 align-middle type-caret" aria-hidden="true">&nbsp;</span>
-            </span>
+          <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem] mb-12 lg:mb-16">
+            <span className="block relative">
+                {/* invisible placeholder with fullText to reserve layout space and avoid jumps */}
+                <span className="invisible block font-mono" aria-hidden="true">{fullText}</span>
+
+                {/* actual typing text positioned on top */}
+                <span className="absolute left-0 top-0 inline-block font-mono">
+                  <span className="mr-2 text-pink-500">&gt;</span>
+                  <span className="inline-block">{displayText}</span>
+                  <span className="inline-block ml-1 align-middle type-caret" aria-hidden="true">&nbsp;</span>
+                </span>
+              </span>
           </h1>
 
           <div className="my-12 flex items-center gap-5">

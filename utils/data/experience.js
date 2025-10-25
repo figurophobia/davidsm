@@ -6,7 +6,7 @@ export const experiences = [
     duration: "(2020 - Present)",
     description: "Collaborated on open source and university projects using Git, gaining experience in teamwork, version control, and collaborative development both in academic and personal environments."
     ,
-    image: '/image/PG.svg'
+    image: '/image/github.svg'
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const experiences = [
     duration: "(2020 - Present)",
     description: "Spent personal time learning programming, building projects, and exploring new technologies in game development, automation, and creative coding. Cultivated self-management, problem-solving, and project planning abilities."
     ,
-    image: '/image/USC.svg'
+    image: '/image/brain.svg'
   },
   {
     id: 3,
@@ -24,6 +24,6 @@ export const experiences = [
     duration: "(Summers 2021 - Present)",
     description: "Developed strong interpersonal and communication skills working in festival bars, handling customer service, teamwork, and adapting quickly to dynamic situations."
     ,
-    image: '/image/IMS.png'
+    image: '/image/talking.svg'
   }
 ]
