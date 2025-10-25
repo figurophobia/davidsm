@@ -21,7 +21,7 @@ export const projectsData = [
     status: 'maintained',
     code: '',
     demo: '',
-    images: [],
+    images: ['/png/portainer1.png', '/png/portainer2.png', '/png/portainer3.png'],
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const projectsData = [
     status: 'released',
     code: 'https://github.com/figurophobia/Milk-Video-Converter',
     demo: '',
-    images: [],
+    images: ['/png/milk.png' ],
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const projectsData = [
     status: 'archived',
     code: 'https://github.com/figurophobia/Monopoly-Java',
     demo: '',
-    images: [],
+    images: ['/png/monopoly1.png', '/png/monopoly2.png', '/png/monopoly3.png', '/png/monopoly4.png', '/png/monopoly5.png'],
   },
   {
     id: 5,
@@ -57,6 +57,6 @@ export const projectsData = [
     status: 'archived',
     code: 'https://github.com/figurophobia/SolarSystemOGL1.2',
     demo: '',
-    images: [],
+    images: ['/png/Solar1.jpeg', '/png/Solar2.jpeg', '/png/Solar3.jpeg', '/png/Solar4.jpeg'],
   }
 ];

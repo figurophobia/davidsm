@@ -21,8 +21,9 @@ export default function Gallery({ images }) {
             fill
             className="object-contain"
             sizes="(min-width: 1024px) 800px, 100vw"
-            quality={90}
+            quality={100}
             priority={index === 0}
+            unoptimized={true}
           />
           <button onClick={next} aria-label="Next image" className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-black/30 text-white p-2 rounded">›</button>
         </div>
@@ -30,8 +31,8 @@ export default function Gallery({ images }) {
       <div className="flex gap-2 overflow-x-auto">
         {images.map((src, i) => (
           <button key={src} onClick={() => setIndex(i)} className={`flex-shrink-0 border ${i === index ? 'border-pink-500' : 'border-transparent'} rounded`}>
-            <div className="relative w-[160px] h-[100px]">
-              <Image src={src} alt={`Thumbnail ${i + 1}`} fill className="object-cover" quality={80} sizes="160px" />
+              <div className="relative w-[160px] h-[100px]">
+              <Image src={src} alt={`Thumbnail ${i + 1}`} fill className="object-cover" quality={100} sizes="160px" unoptimized={true} />
             </div>
           </button>
         ))}
